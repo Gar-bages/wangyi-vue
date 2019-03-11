@@ -1,4 +1,5 @@
 <template>
+
   <footer class="footer_guide">
     <a href="javascript:;" class="guide-item" :class="{on:$route.path==='/homepage'}" @click="goto('/homepage')">
       <span>

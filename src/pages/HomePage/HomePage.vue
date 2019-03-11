@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-wrapper">
     <!--头部导航-->
     <header class="headerNav">
       <div class="headerNav-top">
@@ -133,11 +133,7 @@
       <!--精选图片-->
       <div class="image">
         <img src="https://yanxuan.nosdn.127.net/15519407811151838.gif?imageView&thumbnail=750x0&quality=75" alt="">
-        <span>
-          <img src="https://yanxuan.nosdn.127.net/15519407902381839.jpg?imageView&thumbnail=375x0&quality=75" alt="">
-        </span>
-        <span><img src="https://yanxuan.nosdn.127.net/15520281195103024.jpg?imageView&thumbnail=375x0&quality=75" alt="">
-        </span>
+
         <img class="kola" src="https://yanxuan.nosdn.127.net/e0e6ac580c822602d83fe42f3e0b4b58.png" alt="">
       </div>
       <!--美食阁-->
@@ -153,7 +149,7 @@
       <!--私人定制-->
       <div class="private" >
         <div class="privateTitle">私人定制</div>
-        <div class="privateImg">
+        <div class="swiper-container privateImg">
           <div class="swiper-wrapper"  v-if="homelist.personalShop">
             <div class="swiper-slide li" v-for="(pS, index) in personalShopArr" :key="index">
               <div class="privateBlock" v-for="(item, index) in pS" :key="index">
@@ -166,7 +162,7 @@
             </div>
           </div>
           <!-- 如果需要分页器 -->
-          <div class=".private-swiper-pagination"></div>
+          <div class="private-swiper-pagination"></div>
         </div>
       </div>
       <Split/>
@@ -264,7 +260,6 @@
       })
       new Swiper ('.privateImg', {
         loop: true, // 循环模式选项
-
         // 如果需要分页器
         pagination: {
           el: '.private-swiper-pagination',
@@ -312,372 +307,375 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../../common/stylus/mixins.styl"
-  .headerNav
-    position fixed
-    width 750px
-    height 150px
-    z-index 20
-    background-color #fff
-    .headerNav-top
-      display flex
-      padding 10px
-      h1
-      &.logo
-        width 140px
-        height 40px
-        background-image url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png)
-        display inline-block
-        margin 8px 5px 0 5px
-        background-size cover
-        background-position center
-        background-repeat no-repeat
-        margin-left 20px
-      .input
-        width 440px
-        height 56px
-        border 1px solid #ededed
-        background-color #ededed
-        border-radius 10px
-        text-align center
-        line-height 56px
-        font-size 28px
-        color #666
-        margin-left 10px
-        .iconfont
-          font-size 32px
-      .login
-        width 74px
-        height 40px
-        border 1px solid #b4282d
-        border-radius 10px
-        color #b4282d
-        margin-left 30px
-        margin-top 10px
-        text-align center
-        line-height 40px
-    .nav-wrapper
-      width 650px
-      margin-top 10px
-      overflow hidden
-      .nav-list
-        display flex
-        float left
-        white-space nowrap
-        padding-left 5px
-        li
-          color #666
-          padding 0 5px
-          height 35px
-          font-size 28px
-          margin 0 10px
-          &.active
-            border-bottom 3px solid #b4282d
-
-    .icon
-      width 100px
-      height 60px
-      line-height 60px
-      text-align center
-      position absolute
-      top 78px
-      right 0
-      background rgba(255,255,255,.1)
-      z-index 6
-      transition transform .3s
-      &.rotate
-        transform rotate(180deg)
-      .iconfont
-        font-size 40px
-
-    .quanbu
-      position absolute
-      top 80px
-      width 100%
-      height 370px
-      background-color #fff
-      .pindao
-        font-size 28px
-        padding-left 20px
-        margin-top 10px
-      .tuijian
-        .list
-          display flex
-          flex-wrap wrap
-          padding 50px 0 0 25px
-          li
-            width 140px
-            height 50px
-            border 1px solid #eee
-            background-color #FAFAFA
-            border-radius 5px
-            text-align center
-            line-height 50px
-            margin 0 0 30px 30px
-            &.color
-              border 1px solid #b4282d
-              color #b4282d
-
-
-
-
-
-
-  .content
+  .home-wrapper
     width 100%
-    .mask
-      position absolute
-      top 0
-      left 0
-      right 0
-      bottom 0
-      background rgba(0,0,0,.5)
-    .top-swiper
-      bottom-border-1px(#e4e4e4)
-      height 400px
-      background #fff
-      padding-top 150px
-      .swiper-pagination
-        width: 100%
-        height: 10px
-        /*包裹自定义分页器的div的位置等CSS样式*/
-        &.swiper-pagination-custom
-          bottom: 10px;
-          left: 0;
-          width: 100%;
-          height: 50px
-      .swiper-wrapper
-        width 100%
-        height 100%
-        .swiper-slide
-          display flex
-          justify-content center
-          align-items flex-start
-          flex-wrap wrap
-          img
-            width 100%
-            height 100%
-    .ziying
-      width 100%
-      height 40px
-      ul
-        width 100%
-        height 100%
-        color #b4282d
-        margin-left 58px
-        margin-top 20px
-        li
-          float left
-          margin-right 30px
-          .tubiao
-            background-image url(http://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png)
-            display inline-block
-            background-repeat no-repeat;
-            background-size 100% 100%;
-            width 32px
-            height 32px
-            vertical-align middle
-            &.tu1
-              background-image url(http://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png)
-            &.tu2
-              background-image url(http://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png)
-
-          span
-            vertical-align middle
-
-
-    .menuList
-      width 100%
-      .list
-        display flex
-        float left
-        flex-wrap wrap
-        margin-left 15px
-        li
-          width 110px
-          height 156px
-          margin 0 10px
-          img
-            width 110px
-            height 110px
-          p
-            text-align center
-            margin 8px 0 0 5px
-    .image
-      .kola
-        width 750px
-        height 160px
-      span
-       img
-         float left
-         width 375px
-         height 204px
-    .hot
-      width 100%
-      display flex
-      flex-wrap wrap
-      margin 10px 0 0 33px
-
-      .first
-        width 310px
-        height 250px
-        padding 30px 0 0 30px
-        background-color #f5f5f5
-        img
-          width 150px
-          height 150px
-        &.li
-          margin 0 3px 3px 0
-        &.third
-          margin-right 3px
-        .pics
-          margin-top 20px
-        .title
-          font-size 32px
-          color #333
-        .youhui
-          margin-top 5px
-          color #7f7f7f
-
-    .private
+    overflow hidden
+    .headerNav
+      position fixed
       width 750px
-      height 486px
-      .privateTitle
-        width 750px
-        padding 0 30px
-        box-sizing border-box
-        height 100px
-        line-height 100px
-        font-size 32px
-      .privateImg
-        height 360px
-        overflow hidden
-        .li
-          display flex
-          justify-content space-around
-          width 100%
-          .privateBlock
-            width 215px
-            height 315px
-            display flex
-            flex-direction column
-            align-items center
-            img
-              margin-bottom 12px
-              width 215px
-              height 215px
-              background-color #f5f5f5
-            .price
-              color #b4282d
-
-
-    .timeLimit
-      padding-left 30px
-      line-height 100px
-      .limit-title
-        .limit
-          font-size 34px
-          float left
-        .time
+      height 150px
+      z-index 20
+      background-color #fff
+      .headerNav-top
+        display flex
+        padding 10px
+        h1
+        &.logo
+          width 140px
+          height 40px
+          background-image url(http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-a90bdaae6b.png)
+          display inline-block
+          margin 8px 5px 0 5px
+          background-size cover
+          background-position center
+          background-repeat no-repeat
           margin-left 20px
-          float left
-          .h
-            width 36px
-            height 36px
-            background-color #333
-            border-radius 5px
-            color #fff
-            margin-right 8px
-        .more
-          font-size 32px
-          color #333
-          line-height 36px
-          margin 30px 10px 0 0
-          float right
-      .timeToBuy-goods
-        .timeToBuy-good
+        .input
+          width 440px
+          height 56px
+          border 1px solid #ededed
+          background-color #ededed
+          border-radius 10px
           text-align center
-          color #333
-          float left
-          margin-right 10px
-          img
-            display block
-            width 216px
-            height 216px
-            background #F5F5F5
-            border-radius 4px
-          .activityPrice
-            font-size 24px
-            color #b4282d
-          .originPrice
-            font-size 24px
-            color #7F7F7F
-            text-decoration line-through
-
-    .special
-      width 100%
-      .specialTitle
-        width 100%
-        height 80px
-        line-height 80px
-        .title
-          font-size 32px
+          line-height 56px
+          font-size 28px
+          color #666
+          margin-left 10px
+          .iconfont
+            font-size 32px
+        .login
+          width 74px
+          height 40px
+          border 1px solid #b4282d
+          border-radius 10px
+          color #b4282d
           margin-left 30px
-        .many
-          font-size 32px
-          float right
-          margin-right 10px
-      .topics-wrapper
-        width 100%
-        .topics
+          margin-top 10px
+          text-align center
+          line-height 40px
+      .nav-wrapper
+        width 650px
+        margin-top 10px
+        overflow hidden
+        .nav-list
           display flex
           float left
           white-space nowrap
+          padding-left 5px
+          li
+            color #666
+            padding 0 5px
+            height 35px
+            font-size 28px
+            margin 0 10px
+            &.active
+              border-bottom 3px solid #b4282d
+
+      .icon
+        width 100px
+        height 60px
+        line-height 60px
+        text-align center
+        position absolute
+        top 78px
+        right 0
+        background rgba(255,255,255,.1)
+        z-index 6
+        transition transform .3s
+        &.rotate
+          transform rotate(180deg)
+        .iconfont
+          font-size 40px
+
+      .quanbu
+        position absolute
+        top 80px
+        width 100%
+        height 370px
+        background-color #fff
+        .pindao
+          font-size 28px
+          padding-left 20px
+          margin-top 10px
+        .tuijian
+          .list
+            display flex
+            flex-wrap wrap
+            padding 50px 0 0 25px
+            li
+              width 140px
+              height 50px
+              border 1px solid #eee
+              background-color #FAFAFA
+              border-radius 5px
+              text-align center
+              line-height 50px
+              margin 0 0 30px 30px
+              &.color
+                border 1px solid #b4282d
+                color #b4282d
+
+
+
+
+
+
+    .content
+      width 100%
+      .mask
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        background rgba(0,0,0,.5)
+      .top-swiper
+        bottom-border-1px(#e4e4e4)
+        height 400px
+        background #fff
+        padding-top 150px
+        .swiper-pagination
+          width: 100%
+          height: 10px
+          /*包裹自定义分页器的div的位置等CSS样式*/
+          &.swiper-pagination-custom
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            height: 50px
+        .swiper-wrapper
+          width 100%
+          height 100%
+          .swiper-slide
+            display flex
+            justify-content center
+            align-items flex-start
+            flex-wrap wrap
+            img
+              width 100%
+              height 100%
+      .ziying
+        width 100%
+        height 40px
+        ul
+          width 100%
+          height 100%
+          color #b4282d
+          margin-left 58px
+          margin-top 20px
+          li
+            float left
+            margin-right 30px
+            .tubiao
+              background-image url(http://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png)
+              display inline-block
+              background-repeat no-repeat;
+              background-size 100% 100%;
+              width 32px
+              height 32px
+              vertical-align middle
+              &.tu1
+                background-image url(http://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png)
+              &.tu2
+                background-image url(http://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png)
+
+            span
+              vertical-align middle
+
+
+      .menuList
+        width 100%
+        .list
+          display flex
+          float left
+          flex-wrap wrap
+          margin-left 15px
+          li
+            width 110px
+            height 156px
+            margin 0 10px
+            img
+              width 110px
+              height 110px
+            p
+              text-align center
+              margin 8px 0 0 5px
+      .image
+        .kola
+          width 750px
+          height 160px
+      .hot
+        width 100%
+        display flex
+        flex-wrap wrap
+        margin 10px 0 0 33px
+
+        .first
+          width 310px
+          height 250px
+          padding 30px 0 0 30px
+          background-color #f5f5f5
+          img
+            width 150px
+            height 150px
+          &.li
+            margin 0 3px 3px 0
+          &.third
+            margin-right 3px
+          .pics
+            margin-top 20px
+          .title
+            font-size 32px
+            color #333
+          .youhui
+            margin-top 5px
+            color #7f7f7f
+
+      .private
+        width 750px
+        height 486px
+        .privateTitle
+          width 750px
+          padding 0 30px
+          box-sizing border-box
+          height 100px
+          line-height 100px
+          font-size 32px
+        .privateImg
+          height 360px
           overflow hidden
-          .topic
-            width 480px
-            height 394px
-            background-color #f5f5f5
-            border-radius 10px
+          .li
+            display flex
+            justify-content space-around
+            width 100%
+            .privateBlock
+              width 215px
+              height 315px
+              display flex
+              flex-direction column
+              align-items center
+              img
+                margin-bottom 12px
+                width 215px
+                height 215px
+                background-color #f5f5f5
+              .price
+                color #b4282d
+
+
+
+          .private-swiper-pagination
+            height 20px
+
+      .timeLimit
+        padding-left 30px
+        line-height 100px
+        .limit-title
+          .limit
+            font-size 34px
+            float left
+          .time
+            margin-left 20px
+            float left
+            .h
+              width 36px
+              height 36px
+              background-color #333
+              border-radius 5px
+              color #fff
+              margin-right 8px
+          .more
+            font-size 32px
+            color #333
+            line-height 36px
+            margin 30px 10px 0 0
+            float right
+        .timeToBuy-goods
+          .timeToBuy-good
+            text-align center
+            color #333
+            float left
             margin-right 10px
             img
+              display block
+              width 216px
+              height 216px
+              background #F5F5F5
+              border-radius 4px
+            .activityPrice
+              font-size 24px
+              color #b4282d
+            .originPrice
+              font-size 24px
+              color #7F7F7F
+              text-decoration line-through
+
+      .special
+        width 100%
+        overflow hidden
+        .specialTitle
+          width 100%
+          height 80px
+          line-height 80px
+          .title
+            font-size 32px
+            margin-left 30px
+          .many
+            font-size 32px
+            float right
+            margin-right 10px
+        .topics-wrapper
+          width 100%
+          .topics
+            display flex
+            float left
+            white-space nowrap
+            overflow hidden
+            .topic
               width 480px
-              height 266px
+              height 394px
+              background-color #f5f5f5
               border-radius 10px
-            .evaluate
-              font-size 28px
-              padding 20px 30px
-              white-space nowrap
-              overflow hidden
-              text-overflow ellipsis
-            .des
-              color #7f7f7f
-              padding-left 30px
+              margin-right 10px
+              img
+                width 480px
+                height 266px
+                border-radius 10px
+              .evaluate
+                font-size 28px
+                padding 20px 30px
+                white-space nowrap
+                overflow hidden
+                text-overflow ellipsis
+              .des
+                color #7f7f7f
+                padding-left 30px
 
 
 
-  footer
-    width 100%
-    height 250px
-    background-color #414141
-    margin 30px 0 100px 0
-    div
-      width 180px
-      height 65px
-      border 1px solid #fff
-      color #fff
-      text-align center
-      line-height 65px
-      float left
-      border-radius 10px
-      &.down
-        margin 40px 50px 0 150px
-      &.pc
-        margin 40px 0 0 60px
-    p
-      color #999
-      text-align center
-    .banquan
-      padding-top 150px
+    footer
+      width 100%
+      height 250px
+      background-color #414141
+      margin 30px 0 100px 0
+      div
+        width 180px
+        height 65px
+        border 1px solid #fff
+        color #fff
+        text-align center
+        line-height 65px
+        float left
+        border-radius 10px
+        &.down
+          margin 40px 50px 0 150px
+        &.pc
+          margin 40px 0 0 60px
+      p
+        color #999
+        text-align center
+      .banquan
+        padding-top 150px
 
 
 </style>

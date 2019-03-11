@@ -3,7 +3,7 @@
     <div class="searchTop">
       <div class="search" v-if="searchdata.defaultKeyword">
         <i class="iconfont icon-iconfonticonfontsousuo1"></i>
-        <span class="font">{{searchdata.defaultKeyword.keyword}}</span>
+        <input class="font" type="text" :placeholder="searchdata.defaultKeyword.keyword">
       </div>
       <span class="cancel" @click="$router.back()">取消</span>
     </div>
@@ -55,6 +55,12 @@
         color #666
         .iconfont
           font-size 32px
+        .font
+          width 80%
+          height 50px
+          outline none
+          background #f4f4f4
+
       .cancel
         display inline-block
         font-size 28px

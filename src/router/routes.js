@@ -6,7 +6,7 @@ import ShopCart from '../pages/ShopCart/ShopCart.vue'
 import Personal from '../pages/Personal/Personal.vue'
 import Search from '../pages/Search/Search.vue'
 import List from '../pages/CategroyList/List/List.vue'
-import PhoneLogin from '../pages/Personal/PhoneLogin/PhoneLogin.vue'
+import PhoneLogin from '../pages/PhoneLogin/PhoneLogin.vue'
 
 export default [
   {
@@ -35,12 +35,10 @@ export default [
   {
     path:'/personal',
     component:Personal,
-    children: [
-      {
-        path:'/personal/phone',
-        component:PhoneLogin,
-      }
-    ]
+  },
+  {
+    path:'/personal/phone',
+    component:PhoneLogin,
   },
   {
     path:'/search',

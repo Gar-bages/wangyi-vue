@@ -1,11 +1,11 @@
 <template>
   <div class="loginWrapper">
     <LoginHeader/>
-    <div class="loginMain">
+    <div class="loginMain" >
       <div class="mainImg">
         <img src="http://yanxuan.nosdn.127.net/bd139d2c42205f749cd4ab78fa3d6c60.png" alt="">
       </div>
-      <div class="phoneLogin" @click="$router.replace('./personal/phone')">
+      <div class="phoneLogin" @click="$router.replace('/personal/phone')">
         <i class="iconfont icon-shouji"></i>
         <span>手机号码登录</span>
       </div>
@@ -34,7 +34,9 @@
   </div>
 </template>
 <script>
-  export default {}
+  export default {
+
+  }
 </script>
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   .loginWrapper
@@ -42,7 +44,7 @@
     position fixed
     top 0
     bottom 0
-    background-color #f4f4f4
+    background-color #F2F5F4
     .loginMain
       width 100%
       .iconfont

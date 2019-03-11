@@ -10,7 +10,7 @@
       <div class="categroy-left">
         <ul class="leftUl">
           <li class="leftLi"
-              :class="categoryItem.id===Number($route.query.categoryId)?'active':'' "
+              :class="categoryItem.id===Number($route.query.categoryId) ? 'active' :'' "
               v-for="(categoryItem, index) in cateList.categoryL1List"
               :key="index">
             <!--通过query参数把id传过去 通过id显示对应的数据-->
