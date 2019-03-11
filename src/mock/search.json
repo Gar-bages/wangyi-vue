@@ -1,0 +1,381 @@
+{
+    "defaultKeyword": {
+      "keyword": "断货王 跑步机",
+      "schemeUrl": "http://you.163.com/item/detail?id=1690003&keyword=断货王 跑步机",
+      "highlight": 0,
+      "hidden": 0,
+      "type": 0,
+      "extra": {
+        "taskId": "51499475",
+        "materialId": "51499474",
+        "taskType": 1,
+        "resourcesId": 7,
+        "crmUserGroupId": "0",
+        "crmUserGroupName": "无分组",
+        "materialName": "断货王 跑步机",
+        "operator": null,
+        "itemId": null,
+        "materialType": "默认词id",
+        "itemIdList": null,
+        "customAdPicUrl": null,
+        "customAdLinkUrl": null
+      }
+    },
+    "defaultKeywords": [
+      {
+        "keyword": "断货王 跑步机",
+        "schemeUrl": "http://you.163.com/item/detail?id=1690003&keyword=断货王 跑步机",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51499475",
+          "materialId": "51499474",
+          "taskType": 1,
+          "resourcesId": 7,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "断货王 跑步机",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "量贩囤货",
+        "schemeUrl": "https://m.you.163.com/saleCenter/index?floor=2&keyword=量贩囤货",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "50948260",
+          "materialId": "50948259",
+          "taskType": 1,
+          "resourcesId": 18,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "量贩囤货",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "特价",
+        "schemeUrl": "https://m.you.163.com/saleCenter/index?floor=1&keyword=特价",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "50948253",
+          "materialId": "50948252",
+          "taskType": 1,
+          "resourcesId": 20,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "特价",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "免费试用",
+        "schemeUrl": "https://m.you.163.com/supermc/index?autojump=free&keyword=免费试用",
+        "highlight": 0,
+        "hidden": 1,
+        "type": 0,
+        "extra": {
+          "taskId": "50697077",
+          "materialId": "50697076",
+          "taskType": 1,
+          "resourcesId": 21,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "免费试用",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "拼团",
+        "schemeUrl": "https://m.you.163.com/pin/item/list?keyword=拼团",
+        "highlight": 0,
+        "hidden": 1,
+        "type": 0,
+        "extra": {
+          "taskId": "50697025",
+          "materialId": "50697024",
+          "taskType": 1,
+          "resourcesId": 23,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "拼团",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "积分",
+        "schemeUrl": "http://you.163.com/points/index?keyword=积分",
+        "highlight": 0,
+        "hidden": 1,
+        "type": 0,
+        "extra": {
+          "taskId": "50697003",
+          "materialId": "50697002",
+          "taskType": 1,
+          "resourcesId": 24,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "积分",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "限时购",
+        "schemeUrl": "https://m.you.163.com/flashSale/index?keyword=限时购",
+        "highlight": 0,
+        "hidden": 1,
+        "type": 0,
+        "extra": {
+          "taskId": "50664579",
+          "materialId": "50528168",
+          "taskType": 1,
+          "resourcesId": 26,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "限时购",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "优惠券",
+        "schemeUrl": "http://m.you.163.com/saleCenter/couponList?id=10&keyword=优惠券",
+        "highlight": 0,
+        "hidden": 1,
+        "type": 0,
+        "extra": {
+          "taskId": "50664574",
+          "materialId": "50528165",
+          "taskType": 1,
+          "resourcesId": 29,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "优惠券",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "试用",
+        "schemeUrl": "https://m.you.163.com/supermc/index?autojump=free&keyword=试用",
+        "highlight": 0,
+        "hidden": 1,
+        "type": 0,
+        "extra": {
+          "taskId": "50664566",
+          "materialId": "50528141",
+          "taskType": 1,
+          "resourcesId": 30,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "试用",
+          "operator": null,
+          "itemId": null,
+          "materialType": "默认词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      }
+    ],
+    "hotKeywordVOList": [
+      {
+        "keyword": "早春通勤穿搭",
+        "schemeUrl": "http://you.163.com/topic/v1/pub/E5qiOVrA0I.html?keyword=早春通勤穿搭",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51495948",
+          "materialId": "51495947",
+          "taskType": 1,
+          "resourcesId": 1,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "早春通勤穿搭",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "按摩电器",
+        "schemeUrl": "http://you.163.com/act/topic/v1/pub/wnoDbBMBLw.html?keyword=按摩电器",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51287927",
+          "materialId": "51287926",
+          "taskType": 1,
+          "resourcesId": 2,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "按摩电器",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "美食 3件75折",
+        "schemeUrl": "https://act.you.163.com/act/pub/o6WAQfsz3Z.html?keyword=美食 3件75折",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51397083",
+          "materialId": "51438714",
+          "taskType": 1,
+          "resourcesId": 3,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "美食 3件75折",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "明前龙井7.5折预售",
+        "schemeUrl": "http://you.163.com/topic/v1/pub/cHxVAinWKG.html?keyword=明前龙井7.5折预售",
+        "highlight": 1,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51435213",
+          "materialId": "51438592",
+          "taskType": 1,
+          "resourcesId": 4,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "",
+          "materialName": "明前龙井7.5折预售",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "电动牙刷 69元起",
+        "schemeUrl": "http://you.163.com/item/list?categoryId=1013001&subCategoryId=1037003&keyword=电动牙刷 69元起",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51438757",
+          "materialId": "51432348",
+          "taskType": 1,
+          "resourcesId": 5,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "电动牙刷 69元起",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "活颜润肌水",
+        "schemeUrl": "",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51496422",
+          "materialId": "51496421",
+          "taskType": 1,
+          "resourcesId": 7,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "",
+          "materialName": "活颜润肌水",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      },
+      {
+        "keyword": "牛仔裤 每满199减50",
+        "schemeUrl": "http://you.163.com/topic/v1/pub/CMcWiWSgym.html?keyword=牛仔裤 每满199减50",
+        "highlight": 0,
+        "hidden": 0,
+        "type": 0,
+        "extra": {
+          "taskId": "51486641",
+          "materialId": "51486640",
+          "taskType": 1,
+          "resourcesId": 17,
+          "crmUserGroupId": "0",
+          "crmUserGroupName": "无分组",
+          "materialName": "牛仔裤 每满199减50",
+          "operator": null,
+          "itemId": null,
+          "materialType": "热搜词id",
+          "itemIdList": null,
+          "customAdPicUrl": null,
+          "customAdLinkUrl": null
+        }
+      }
+    ],
+    "colorfulEggList": []
+}
