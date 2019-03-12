@@ -147,24 +147,25 @@
       </div>
       <Split/>
       <!--私人定制-->
-      <div class="private" >
+      <div class="private">
         <div class="privateTitle">私人定制</div>
-        <div class="swiper-container privateImg">
-          <div class="swiper-wrapper"  v-if="homelist.personalShop">
-            <div class="swiper-slide li" v-for="(pS, index) in personalShopArr" :key="index">
-              <div class="privateBlock" v-for="(item, index) in pS" :key="index">
-                <img v-lazy="item.primaryPicUrl" alt="">
-                <span>{{item.name}}
+          <div class="swiper-container privateImg">
+            <div class="swiper-wrapper" v-if="homelist.personalShop">
+              <div class="swiper-slide li" v-for="(pS, index) in personalShopArr" :key="index">
+                <div class="privateBlock" v-for="(item, index) in pS" :key="index">
+                  <img v-lazy="item.primaryPicUrl" alt="">
+                  <span>{{item.name}}
                   <span class="price">￥{{item.counterPrice}}</span>
                 </span>
 
+                </div>
               </div>
             </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
           </div>
-          <!-- 如果需要分页器 -->
-          <div class="private-swiper-pagination"></div>
         </div>
-      </div>
+
       <Split/>
       <!--限时购-->
       <div class="timeLimit">
@@ -236,7 +237,7 @@
 
       const list = await this.$store.dispatch('getHomeList')
       console.log('list',list);
-      new Swiper ('.swiper-container', {
+      new Swiper ('.top-swiper', {
         loop: true, // 循环模式选项
 
         pagination: {
@@ -262,7 +263,7 @@
         loop: true, // 循环模式选项
         // 如果需要分页器
         pagination: {
-          el: '.private-swiper-pagination',
+          el: '.swiper-pagination',
         },
       })
       new BScroll('.nav-wrapper',{
@@ -542,6 +543,7 @@
           line-height 100px
           font-size 32px
         .privateImg
+          width 100%
           height 360px
           overflow hidden
           .li
@@ -694,7 +696,7 @@
   /*自定义分页器激活时的样式表现*/
   .swiper-pagination-customs-active {
     opacity: 1;
-    background: #fff;
+    background: #ab2b2b;
     border-radius: 0;
   }
 

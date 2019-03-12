@@ -14,7 +14,7 @@
       </div>
       <div class="button">
         <span class="text">去添加点什么吧</span>
-        <div class="anniu">登录</div>
+        <div class="anniu" @click="$router.replace('/personal')">登录</div>
       </div>
     </div>
   </div>

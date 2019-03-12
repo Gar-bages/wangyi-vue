@@ -7,6 +7,7 @@ import Personal from '../pages/Personal/Personal.vue'
 import Search from '../pages/Search/Search.vue'
 import List from '../pages/CategroyList/List/List.vue'
 import PhoneLogin from '../pages/PhoneLogin/PhoneLogin.vue'
+import Topics from '../pages/Recomment/Topics/Topics.vue'
 
 export default [
   {
@@ -27,6 +28,13 @@ export default [
   {
     path:'/recomment',
     component:Recomment,
+    redirect:'/recomment/topics/0',
+    children: [
+      {
+        path:'/recomment/topics/:id',
+        component:Topics,
+      }
+    ]
   },
   {
     path:'/shopcart',

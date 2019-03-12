@@ -7,8 +7,9 @@
       </div>
       <div class="from">
         <input type="text" placeholder="请输入手机号" v-model="phone">
+        <span class="clear" v-show="phone" @click="phone=''">X</span>
         <div class="message" v-show="!loginWay">
-          <input type="text" placeholder="请输入短信验证码">
+          <input type="text" placeholder="请输入短信验证码" v-model="code">
           <div class="code">获取验证码</div>
           <div class="problem">
             <span class="trouble">遇到问题?</span>
@@ -16,7 +17,7 @@
           </div>
         </div>
         <div class="pwd" v-show="loginWay">
-          <input type="text" placeholder="请输入密码">
+          <input type="text" placeholder="请输入密码" v-model="password">
           <div class="problem">
             <span class="trouble">忘记密码?</span>
             <span @click="toggleLoginWay">使用短信验证登录</span>
@@ -84,6 +85,7 @@
         width 192px
         height 64px
     .from
+      position relative
       input
         width 90%
         height 90px
@@ -91,6 +93,14 @@
         outline none
         border-bottom 1px solid #bdbdbd
         margin 20px 0
+      .clear
+        position absolute
+        top 40px
+        right 30px
+        display block
+        width 60px
+        height 60px
+        line-height 60px
       .message
         position relative
         .code
