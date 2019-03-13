@@ -6,7 +6,7 @@
     </div>
     <div class="buyerPj">{{look.content}}</div>
     <div class="pic" v-if="look.lookPics[0]">
-      <img :src="look.lookPics[0].picUrl" alt="">
+      <img v-lazy="look.lookPics[0].picUrl" alt="">
     </div>
     <div class="read">
       <i class="iconfont icon-iconkanguo"></i>
@@ -16,6 +16,7 @@
 </template>
 <script>
   export default {
+
     props:{
       look:Object,
     },
@@ -57,8 +58,9 @@
       line-height 60px
       text-overflow ellipsis
       overflow hidden
-      display -webkit-box
-      -webkit-line-clamp 2
+      display -webkit-box  //display: flex的老版
+      -webkit-line-clamp 3
+      -webkit-box-orient vertical //主轴和侧轴对调
     .pic
       width 706px
       height 470px

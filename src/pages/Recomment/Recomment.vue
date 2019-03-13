@@ -23,7 +23,6 @@
         </ul>
       </div>
     </div>
-    <Split/>
     <div class="shiwu-content">
       <router-view/>
     </div>

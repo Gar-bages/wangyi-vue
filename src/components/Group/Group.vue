@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="groupRight">
-      <img :src="topic.picUrl" alt="">
+      <img v-lazy="topic.picUrl" alt="">
     </div>
   </div>
 </template>

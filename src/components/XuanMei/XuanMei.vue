@@ -6,7 +6,7 @@
     </div>
     <div class="desc">{{topic.title}}</div>
     <div class="banner">
-      <img :src="topic.picUrl" alt="">
+      <img v-lazy="topic.picUrl" alt="">
     </div>
     <div class="read">
       <i class="iconfont icon-iconkanguo"></i>

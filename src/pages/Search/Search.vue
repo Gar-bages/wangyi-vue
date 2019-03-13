@@ -3,7 +3,7 @@
     <div class="searchTop">
       <div class="search" v-if="searchdata.defaultKeyword">
         <i class="iconfont icon-iconfonticonfontsousuo1"></i>
-        <input class="font" type="text" :placeholder="searchdata.defaultKeyword.keyword">
+        <input class="font" type="text" :placeholder="searchdata.defaultKeyword.keyword" v-model="searchName">
       </div>
       <span class="cancel" @click="$router.back()">取消</span>
     </div>
@@ -21,17 +21,22 @@
 </template>
 <script>
   import {mapState} from 'vuex'
-  import {reqSearchData} from '../../api/index'
   export default {
-    async mounted () {
-      const result = await this.$store.dispatch('getSearchData')
-      console.log('re',result)
-      // const result = await reqSearchData()
-      // console.log('re',result)
+    data () {
+      return {
+        searchName:'', //搜索输入的关键字
+      }
+    },
+    mounted () {
+      this.$store.dispatch('getSearchData')
+      //搜索返回对应数据
+      const searchName = this.searchName.trim()
+      this.$store.dispatch('getSearch',{searchName})
     },
     computed: {
       ...mapState({
         searchdata:state => state.search.searchdata,
+        searchKeyWord: state => state.search.searchKeyWord
       }),
     }
 

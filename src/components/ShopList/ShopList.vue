@@ -4,7 +4,7 @@
     <div class="listDesc">{{topic.subTitle}}</div>
     <div class="listImg">
       <ul class="Imgs">
-        <li v-for="(item,index) in topic.itemList" :key="index"><img :src="item.itemUrl" alt=""></li>
+        <li v-for="(item,index) in topic.itemList" :key="index"><img v-lazy="item.itemUrl" alt=""></li>
       </ul>
     </div>
   </div>

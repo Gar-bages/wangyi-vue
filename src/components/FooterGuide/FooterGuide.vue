@@ -13,7 +13,7 @@
       </span>
       <span>分类</span>
     </a>
-    <a href="javascript:;" class="guide-item" :class="{on:$route.path==='/recomment'}" @click="goto('/recomment')">
+    <a href="javascript:;" class="guide-item" :class="{on:$route.path.includes('/recomment')}" @click="goto('/recomment')">
       <span>
         <i class="iconfont icon-topic"></i>
       </span>

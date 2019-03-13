@@ -4,7 +4,7 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(look,index) in topic.lookList" :key="index">
-          <img :src="look.picUrl" alt="">
+          <img v-lazy="look.picUrl" alt="">
         </div>
       </div>
       <!-- 如果需要分页器 -->
@@ -64,9 +64,7 @@
     .swiper-container
       width 100%
       overflow hidden
-
       .swiper-wrapper
-        width 100%
         .swiper-slide
           background #fff
           &.swiper-slide-active
